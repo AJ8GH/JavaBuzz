@@ -17,4 +17,16 @@ class JavaBuzzTest {
     void divisibleBy3() {
         assertEquals(JavaBuzz.javaBuzz(3), "Java");
     }
+
+    @Test
+    @DisplayName("Buzz is returned if number is divisible by 5")
+    void divisibleBy5() {
+        assertEquals(JavaBuzz.javaBuzz(5), "Buzz");
+    }
+
+    @Test
+    @DisplayName("JavaBuzz is returned if number is divisible by 15")
+    void divisibleBy15() {
+        assertEquals(JavaBuzz.javaBuzz(15), "JavaBuzz");
+    }
 }
